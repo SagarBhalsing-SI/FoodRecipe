@@ -1,5 +1,6 @@
-package com.example.foodrecipe
+package com.example.foodrecipe.models
 
+import com.example.foodrecipe.ExtendedIngredient
 import com.google.gson.annotations.SerializedName
 
 data class Result(

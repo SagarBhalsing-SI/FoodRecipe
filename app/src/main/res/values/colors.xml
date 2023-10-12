@@ -3,4 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#00FF00</color>
+
+
+
+
+
+    //Custom Chip Style
+    <color name="checkedChipBackgroundColor">#206200EA</color>
+    <color name="chipBackgroundColor">#D3D3D3</color>
+    <color name="checkedChipTextColor">#800080</color>
+    <color name="chipTextColor">#FF000000</color>
 </resources>

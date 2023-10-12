@@ -11,17 +11,34 @@
         android:name="com.example.foodrecipe.ui.fragments.recipe.RecipiesFragment"
         android:color="@color/white"
         android:label="Recipies"
-        tools:layout="@layout/fragment_recipies" />
+        tools:layout="@layout/fragment_recipies" >
+        <action
+            android:id="@+id/action_recipiesFragment_to_recipesBottomSheet"
+            app:destination="@id/recipesBottomSheet" />
+        <argument
+            android:name="backFromBottomSheet"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
     <fragment
         android:id="@+id/foodJokeFragment"
         android:name="com.example.foodrecipe.ui.fragments.foodjoke.FoodJokeFragment"
         android:label="Joke"
-        android:color="@color/white"
+        android:color="#FFFF00"
         tools:layout="@layout/fragment_food_joke" />
     <fragment
         android:id="@+id/favoriteRecepiesFragment"
         android:name="com.example.foodrecipe.ui.fragments.favorites.FavoriteRecepiesFragment"
         android:label="Favorite Recepies"
-        android:color="@color/white"
+        android:color="#FFFF00"
         tools:layout="@layout/fragment_favorite_recepies" />
+    <dialog
+        android:id= "@+id/recipesBottomSheet"
+        android:name="com.example.foodrecipe.ui.fragments.recipe.bottomsheet.RecipesBottomSheet"
+        android:label="recipes_bottom_sheet"
+        tools:layout="@layout/recipes_bottom_sheet" >
+        <action
+            android:id="@+id/action_recipesBottomSheet_to_recipiesFragment"
+            app:destination="@id/recipiesFragment" />
+    </dialog>
 </navigation>

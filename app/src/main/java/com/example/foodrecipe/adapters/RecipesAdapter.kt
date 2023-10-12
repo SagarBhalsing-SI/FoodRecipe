@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.foodrecipe.FoodRecipe
-import com.example.foodrecipe.Result
+import com.example.foodrecipe.models.FoodRecipe
+import com.example.foodrecipe.models.Result
 import com.example.foodrecipe.databinding.RecipiesRowLayoutBinding
 import com.example.foodrecipe.ui.RecipesDiffUtil
 
@@ -36,7 +36,7 @@ class RecipesAdapter : RecyclerView.Adapter<RecipesAdapter.MyViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: RecipesAdapter.MyViewHolder, position: Int) {
-        val currentRecipe = recipes[position]
+        val currentRecipe  = recipes[position]
         holder.bind(currentRecipe)
     }
 

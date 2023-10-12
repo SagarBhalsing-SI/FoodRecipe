@@ -2,9 +2,13 @@ package com.example.foodrecipe.data
 
 import dagger.hilt.android.scopes.ActivityRetainedScoped
 import javax.inject.Inject
-@ActivityRetainedScoped
+import javax.inject.Singleton
+
+@Singleton
 class Repository @Inject constructor(
-    remoteDataSource: RemoteDataSource
+    remoteDataSource: RemoteDataSource,
+    localDataSource: LocalDataSource
 ){
     val remote = remoteDataSource
+    val local = localDataSource
 }

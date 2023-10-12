@@ -4,6 +4,7 @@ plugins {
     id("androidx.navigation.safeargs.kotlin")
     id("dagger.hilt.android.plugin")
     id("kotlin-kapt")
+
 }
 
 android {
@@ -41,6 +42,9 @@ android {
         //noinspection DataBindingWithoutKapt
         dataBinding = true
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -52,19 +56,36 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
+
+    implementation("androidx.room:room-common:2.5.2")
+    implementation("androidx.room:room-ktx:2.5.2")
+    implementation ("androidx.room:room-runtime:2.5.2")
+    kapt("androidx.room:room-compiler:2.5.2")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //daggerhilt
-    implementation ("com.google.dagger:hilt-android:2.41")
-    kapt("com.google.dagger:hilt-android-compiler:2.41")
+    implementation ("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
-    implementation ("androidx.hilt:hilt-lifecycle-view-model:1.0.0-alpha03")
-    kapt("androidx.hilt:hilt-compiler:1.0.0-alpha01")
+    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02")
+    //kapt ("androidx.hilt:hilt-compiler:1.0.0-alpha02")
+
 
     implementation ("androidx.recyclerview:recyclerview:1.1.0")
 
     implementation("io.coil-kt:coil:1.0.0")
+    // Lifecycle
+    implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+    implementation ("androidx.datastore:datastore-preferences:1.0.0-alpha01")
+
+    // Gson
+    implementation ("com.google.code.gson:gson:2.9.0")
+    implementation ("org.jsoup:jsoup:1.13.1")
 
 }
