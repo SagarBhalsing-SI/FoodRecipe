@@ -12,6 +12,7 @@ import coil.load
 import com.example.foodrecipe.models.Result
 import com.example.foodrecipe.R
 import com.example.foodrecipe.ui.fragments.recipe.RecipiesFragmentDirections
+import org.jsoup.Jsoup
 
 
 class RecipesRowBinding {
@@ -75,6 +76,15 @@ imageView.load(imageUrl){
                         )
                     }
                 }
+            }
+
+        }
+        @BindingAdapter("parseHtml")
+        @JvmStatic
+        fun parseHtml(textView: TextView, description: String?){
+            if(description != null) {
+                val desc = Jsoup.parse(description).text()
+                textView.text = desc
             }
         }
     }

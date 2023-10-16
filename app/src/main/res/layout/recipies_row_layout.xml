@@ -73,7 +73,7 @@
                     android:layout_marginBottom="12dp"
                     android:ellipsize="end"
                     android:maxLines="3"
-                    android:text="@{result.summary}"
+                    parseHtml="@{result.summary}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/title_TextView"
                     app:layout_constraintHorizontal_bias="0.0"
