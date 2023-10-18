@@ -5,6 +5,9 @@ class Constants {
 
         const val BASE_URL = "https://api.spoonacular.com"
         const val API_KEY = "1b044d600873440b9ba8e54bbe845d3e"
+        const val BASE_IMAGE_URL = "https://spoonacular.com/cdn/ingredients_100x100/"
+
+        const val RECIPE_RESULT_KEY = "recipeBundle"
 
         //API Query Key
         const val QUERY_SEARCH = "query"
@@ -18,7 +21,7 @@ class Constants {
         //ROOM DataBase
         const val DATABASE_NAME="recipes_database"
         const val RECIPES_TABLE="recipes_table"
-
+        const val FAVORITE_RECIPES_TABLE = "favorite_recipes_table"
         //Bottom Sheet & Preferences
 
         const val DEFAULT_RECIPES_NUMBER ="50"

@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import coil.load
 import com.example.foodrecipe.R
 import com.example.foodrecipe.models.Result
+import com.example.foodrecipe.util.Constants.Companion.RECIPE_RESULT_KEY
 import org.jsoup.Jsoup
 
 class OverviewFragment : Fragment() {
@@ -60,7 +61,7 @@ class OverviewFragment : Fragment() {
 
 
         val args = arguments
-        val myBundle: Result? = args?.getParcelable("recipeBundle")
+        val myBundle: Result? = args?.getParcelable(RECIPE_RESULT_KEY)
 
         mainImage.load(myBundle?.image)
         titleText.text = myBundle?.title

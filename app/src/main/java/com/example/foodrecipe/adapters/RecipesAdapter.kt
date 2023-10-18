@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.foodrecipe.models.FoodRecipe
 import com.example.foodrecipe.models.Result
 import com.example.foodrecipe.databinding.RecipiesRowLayoutBinding
-import com.example.foodrecipe.ui.RecipesDiffUtil
+import com.example.foodrecipe.util.RecipesDiffUtil
 
 class RecipesAdapter : RecyclerView.Adapter<RecipesAdapter.MyViewHolder>() {
 
