@@ -35,9 +35,6 @@
     <string name="vegetarian">Vegetarian</string>
 
 
-
-
-
     <string name="cheap">Cheap</string>
     <string name="healthy">Healthy</string>
     <string name="dairy_free">Dairy Free</string>
@@ -45,4 +42,6 @@
     <string name="no_favorite_recipe">No Favorite Recipe</string>
     <string name="delete_favorite_menu">Delete Favorite Menu</string>
     <string name="delete_all">Delete All</string>
+    <string name="what_s_the_best_way_to_burn_vegetables_roast_them">What’s the best way to burn vegetables? Roast them.</string>
+    <string name="share">Share</string>
 </resources>

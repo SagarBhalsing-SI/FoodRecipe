@@ -18,9 +18,17 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_recipes"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            tools:itemCount="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"  />
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -30,8 +38,9 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
             android:clickable="true"
+            android:background="@color/lightMediumGray"
             android:src="@drawable/ic_menu"
-            app:tint="#800080"
+            app:tint="@color/white"
             android:focusable="true"
             android:contentDescription="Menu"
             app:layout_constraintBottom_toBottomOf="parent"

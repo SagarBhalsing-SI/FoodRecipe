@@ -23,7 +23,7 @@ import java.util.Locale
 class RecipesBottomSheet : BottomSheetDialogFragment() {
 
     private lateinit var mealChipGroup : ChipGroup
-    private lateinit var dietChipGroup :ChipGroup
+    private lateinit var dietChipGroup : ChipGroup
     private lateinit var applyBtn : Button
     private var mealTypeChip = DEFAULT_MEAL_TYPE
     private var mealTypeChipId = 0
@@ -36,7 +36,7 @@ class RecipesBottomSheet : BottomSheetDialogFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        recipesViewModel = ViewModelProvider(requireActivity()).get(RecipesViewModel::class.java)
+        recipesViewModel = ViewModelProvider(requireActivity())[RecipesViewModel::class.java]
     }
 
     override fun onCreateView(

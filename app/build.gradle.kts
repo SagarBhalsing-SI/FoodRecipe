@@ -5,8 +5,6 @@ plugins {
     id("dagger.hilt.android.plugin")
     id("kotlin-kapt")
     id("kotlin-parcelize")
-
-
 }
 
 android {
@@ -91,5 +89,9 @@ dependencies {
     // Gson
     implementation ("com.google.code.gson:gson:2.9.0")
     implementation ("org.jsoup:jsoup:1.13.1")
+
+    //SplashScreen
+    implementation ("androidx.core:core-splashscreen:1.0.0-beta02")
+
 
 }
